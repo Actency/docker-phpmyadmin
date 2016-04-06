@@ -26,9 +26,10 @@ This is the Actency Docker image for phpmyadmin, based on nazarpc/phpmyadmin.
           - mailhog
           - memcache
 
-      # database container - official images
+      # database container - actency images
       database:
-        image: mysql:5.7
+        # actency/docker-mysql available tags: latest, 5.7, 5.6, 5.5
+        image: actency/docker-mysql:5.6
         ports:
           - "3306:3306"
         environment:
