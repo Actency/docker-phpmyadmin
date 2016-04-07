@@ -14,6 +14,7 @@ This is the Actency Docker image for phpmyadmin, based on nazarpc/phpmyadmin.
         #image: actency/docker-nginx-php:5.6
         ports:
           - "80:80"
+          - "9000:9000"
         environment:
           - SERVERNAME=example.local
           - SERVERALIAS=example2.local *.example2.local
