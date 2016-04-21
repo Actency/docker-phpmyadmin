@@ -27,6 +27,7 @@ This is the Actency Docker image for phpmyadmin, based on nazarpc/phpmyadmin.
           - mailhog
           - memcache
           - solr
+        tty: true
 
       # database container - actency images
       database:
