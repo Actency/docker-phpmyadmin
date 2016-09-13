@@ -1,7 +1,7 @@
 FROM php:5.6-apache
 
 # Set desired phpMyAdmin version
-RUN PHPMYADMIN_VERSION=4.6.2 && \
+RUN PHPMYADMIN_VERSION=4.6.4 && \
 
 # Install libbz2-dev and zlib1g-dev packages to support *.sql.bz2 and *.sql.zip compressed files during imports
 	apt-get update && \
