@@ -22,5 +22,6 @@ COPY .htaccess /var/www/html/.htaccess
 COPY config.inc.php /var/www/html/config.inc.php
 
 COPY docker-entrypoint.sh /home/entrypoint.sh
+RUN chmod +x /home/entrypoint.sh
 
 ENTRYPOINT ["/home/entrypoint.sh"]
